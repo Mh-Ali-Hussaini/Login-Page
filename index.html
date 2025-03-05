@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Login Form | Skills Studio</title>
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container" id="container">
+
+    <!-- Sign Up Part -->
+     <div class="form-container sign-up">
+      <form action="">
+        <div class="head">
+          <i class="fa fa-user-circle"></i>
+          <h1>Create Account</h1>
+        </div>
+        <label for="fullName">Full Name</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password">
+        <button type="submit">Sign Up</button>
+        <p>Or continue with your google account</p>
+        <div class="withGoogle">
+          <img src="./google.png" style="width: 28px;" alt="">
+          <span>with google</span>
+        </div>
+      </form>
+     </div>
+
+     <!-- Sign In Part -->
+     <div class="form-container sign-in">
+      <form action="">
+        <div class="head">
+          <i class="fa fa-user-circle"></i>
+          <h1>Sign In</h1>
+        </div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password">
+        <p><a href="">Forget your password?</a></p>
+        <button type="submit">Sign In</button>
+        <p>Or login with your google account</p>
+        <div class="withGoogle">
+          <img src="./google.png" style="width: 28px;" alt="">
+          <span>with google</span>
+        </div>
+      </form>
+     </div>
+
+
+     <!-- Toggler Part -->
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back! to our website</h1>
+            <p>Login with your email and password to use all of our website features</p>
+            <button class="hidden-btn" id="signIn">Sign In</button>
+          </div>
+
+          <div class="toggle-panel toggle-right">
+            <h1>Hello welcome to our website</h1>
+            <p>Register with your details to use all of our website features</p>
+            <button class="hidden-btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
